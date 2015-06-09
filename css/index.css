@@ -1,0 +1,55 @@
+#section0 {
+	background-image: url(../img/index-page0-bgi.jpg);
+}
+#section2 {
+	background-image: url(../img/index-page2-bgi.jpg);
+}
+.index-font {
+	line-height: 162px;
+}
+.index-font-main {
+	color: #FFFFFF;
+	font-size: 62px;
+}
+.index-font-desc {
+	color: #FFFFFF;
+	font-size: 40.88px;
+}
+.index-div-desc{
+	margin-top: 80px;
+}
+.index-font-desc1 {
+	color: #ff6724;
+	font-size: 40.88px;
+}
+.index-font-desc2 {
+	color: #ff6724;
+	font-size: 20.88px;
+}
+.index-font-desc3 {
+	color: #ff6724;
+	font-size: 62px;
+}
+.index-div-download {
+	margin-top: 40px;
+}
+a.index-button-download {
+	background: none;
+	border: 1px solid #ff6724;
+	/*border-radius: 30px;*/
+	color: #ff6724;
+	padding: 8px 30px;
+	font-size: 21px;
+}
+a.index-button-download:hover {
+	background-color: #ff6724;
+	border: 1px solid #ff6724;
+	/*border-radius: 30px;*/
+	color: #FFFFFF;
+}
+footer p {
+	color: #ff6724;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 200;
+}
