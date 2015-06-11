@@ -76,3 +76,45 @@ i.app-android{
 	left: 200%;
 	position:relative;
 }
+#section0 p{
+	display:none;
+}
+#section1 img{
+	right: 150%;
+	position:relative;
+}
+#section1 p{
+	left: 100%;
+	position:relative;
+}
+.index-footer {
+	height:150px;
+	line-height:150px;
+	margin-top: 100px;
+	background-color: #FFFFFF;
+}
+.contact-us{
+	/*height: 50px;*/
+	font-size: 16px;
+	position: absolute;
+	right: 60px;
+	bottom: 60px;
+}
+#download_div {
+	display: none;
+	padding: 5px 5px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+#download_div i.app-ios,#download_div i.app-android {
+	margin-top: 10px;
+}
+i.app-qr {
+	width: 62px;
+	height: 62px;
+	display: block;
+	background: url("../img/index-page0-qr.png") no-repeat center center;
+}
