@@ -6,13 +6,19 @@ $(document).ready(function() {
 		navigation: true,
 		scrollOverflow: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['µÚÒ»Ò³', 'µÚ¶þÒ³', 'µÚÈýÒ³']
+		navigationTooltips: ['ç¬¬ä¸€é¡µ', 'ç¬¬äºŒé¡µ', 'ç¬¬ä¸‰é¡µ'],
+		afterLoad: function(anchorLink, index){
+			console.log(index);
+			if(index == 1){
+				$('#section0').find('img').delay(500).animate({
+					left: '0%'
+				}, 1500, 'easeOutExpo');
+			}
+		}
 	});
 	$('#dg-container').gallery();
-});
-/*
-$(document).ready(function(){
-	$("#demosMenu").change(function(){
-	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
+	$("#qr_button").popover({
+		content: "<div class='row'><div class='col-md-4'><a href=''><i class='app-ios'></i></a></div><div class='col-md-4 col-md-offset-2'><a href=''><i class='app-android'></i></a></div></div>"
 	});
-});*/
+
+});

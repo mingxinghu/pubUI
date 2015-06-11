@@ -53,3 +53,26 @@ footer p {
 	font-size: 35px;
 	font-weight: 200;
 }
+#qr_button {
+	padding: 0 0;
+}
+
+div.popover-content a {
+	display: block;
+}
+i.app-ios{
+	width: 31px;
+	height: 39px;
+	display: block;
+	background: url("../img/ios.png") no-repeat center center;
+}
+i.app-android{
+	width: 35px;
+	height: 39px;
+	display: block;
+	background: url("../img/android.png") no-repeat center center;
+}
+#section0 img{
+	left: 200%;
+	position:relative;
+}

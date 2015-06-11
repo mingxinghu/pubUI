@@ -3,9 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>index</title>
-    <link rel="stylesheet" type="text/css" href="vendors/fullPage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/fullPage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="vendors/gallery/css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -24,7 +24,9 @@
                         <h4 class="index-font-desc">最强追星神器</h4>
                     </div>
                     <div class="col-md-3">
-                        <img src="img/index-page0-qr.png" >
+                        <a tabindex="0" id="qr_button" class="btn btn-lg" data-placement="left" data-container="body" role="button" data-toggle="popover" data-html="true">
+                            <img src="img/index-page0-qr.png" >
+                        </a>
                     </div>
                 </div>
             </div>
@@ -37,7 +39,7 @@
                     <div class="col-md-6 text-center index-div-desc">
                         <div class="row">
                             <span class="index-font-desc1">追星神器</span>
-                            <span class="index-font-desc2">全国开启</span>
+                            <span class="index-font-desc2">全球开启</span>
                             <span class="index-font-desc3">2.x</span>
                             <span class="index-font-desc2">时代</span>
                         </div>
@@ -97,7 +99,8 @@
 
 </div>
 
-<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/jquery/jquery-1.9.1.min.js"></script>
+<script src="vendors/jquery/jquery-ui-1.9.1.min.js"></script>
 <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="vendors/slimscroll/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="vendors/fullPage/jquery.fullPage.js"></script>
