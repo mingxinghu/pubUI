@@ -10,7 +10,7 @@ Index.HidePopoverForDelay = function(){
 			$("#qr_button").popover('hide');
 		}
 		Index.isExcuting = false;
-	}, 500);
+	}, 300);
 };
 Index.registerPopover = function(){
 	var qrButton = $("#qr_button");
@@ -61,12 +61,14 @@ Index.registerDownload = function(){
 			"</div>";
 		downloadParentDiv.html(html);
 		var downloadDiv = $("#download_div");
-		downloadDiv.blur(function(){
-			downloadParentDiv.html("<a id=\"download_button\" href=\"javascript:void(0)\" class=\"btn btn-default index-button-download\">点击下载</a>");
-			Index.registerDownload();
+		//downloadDiv.show(400);
+		downloadDiv.fadeIn(1800, "swing", function(){
+			downloadDiv.focus();
+			downloadDiv.blur(function(){
+				downloadParentDiv.html("<a id=\"download_button\" href=\"javascript:void(0)\" class=\"btn btn-default index-button-download\">点击下载</a>");
+				Index.registerDownload();
+			});
 		});
-		downloadDiv.show(400);
-		downloadDiv.focus();
 
 	});
 };
@@ -80,8 +82,9 @@ $(document).ready(function() {
 		navigationColor: "#FF6628",
 		navigationPosition: 'right',
 		navigationTooltips: ['第一页', '第二页', '第三页'],
+		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
 		afterLoad: function(anchorLink, index){
-			console.log(index);
+			util.log.print(util.log.level.INFO, "switch page "+index);
 			if(index == 1){
 				var currentSection = $('#section0');
 				currentSection.find('img').delay(100).animate({

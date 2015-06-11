@@ -118,3 +118,9 @@ i.app-qr {
 	display: block;
 	background: url("../img/index-page0-qr.png") no-repeat center center;
 }
+#fp-nav span, .fp-slidesNav span{
+	border-color: #AAA;
+}
+#fp-nav li .active span, .fp-slidesNav .active span{
+	background: #AAA;
+}
