@@ -3,6 +3,7 @@
 var Index = {};
 Index.isShow = false;
 Index.isExcuting = false;
+Index.canLookArrow = true;
 Index.HidePopoverForDelay = function(){
 	Index.isExcuting = true;
 	setTimeout(function () {
@@ -72,6 +73,22 @@ Index.registerDownload = function(){
 
 	});
 };
+Index.registerMoveDown = function(){
+	$('.arrow').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveSectionDown();
+	});
+};
+Index.arrowCtrl = function(pageIndex){
+	var arrow = $('.arrow');
+	if(pageIndex == 3 && Index.canLookArrow){
+		arrow.hide(500);
+		Index.canLookArrow = false;
+	}else if(pageIndex < 3 && !Index.canLookArrow){
+		arrow.show(500);
+		Index.canLookArrow = true;
+	}
+};
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
@@ -105,6 +122,7 @@ $(document).ready(function() {
 					left: '0%'
 				}, 1500, 'easeOutExpo');
 			}
+			Index.arrowCtrl(index);
 		}
 	});
 	$('#dg-container').gallery();
@@ -114,5 +132,6 @@ $(document).ready(function() {
 	util.log.print(util.log.level.INFO, "register event!");
 	Index.registerPopover();
 	Index.registerDownload();
+	Index.registerMoveDown();
 
 });
