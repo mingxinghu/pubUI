@@ -3,8 +3,8 @@
  */
 "use strict";
 
-var util = {};
-util.log = {
+var Util = {};
+Util.log = {
     level: {
         INFO: "info",
         ERROR: "error"

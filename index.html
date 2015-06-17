@@ -11,22 +11,41 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
+<div id="contact_us" class="contact-us contact-font-default">
+    <a href="http://www.weibo.com/u/5324802169" target="_blank"><img src="img/sina-weibo.png"> 联系我们</a>
+</div>
 <div id="fullpage">
     <div class="section" id="section0">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
                 <div id="page1_row" class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-md-offset-1">
                         <img src="img/index-page0-logo.png" >
                     </div>
-                    <div class="col-md-5 text-center">
-                        <p class="index-font-main">全民星探</p>
-                        <p class="index-font-desc">最强追星神器</p>
+                    <div class="col-md-4 text-center">
+                        <p id="page0_p">
+                            <span class="index-font-main">全民星探</span><br>
+                            <span class="index-font-desc">最强追星神器</span>
+                        </p>
                     </div>
                     <div class="col-md-3">
                         <a tabindex="0" id="qr_button" class="btn btn-lg" data-placement="left" data-container="body" role="button" data-toggle="popover" data-html="true">
                             <img src="img/index-page0-qr.png" >
                         </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-8">
+                        <div class="col-md-5 col-md-offset-1">
+                            <a href="javascript:void(0)" title="下载苹果应用">
+                                <img src="img/ios-white.png" class="app-ios-white">
+                            </a>
+                        </div>
+                        <div class='col-md-6'>
+                            <a href="javascript:void(0)" title="下载安卓应用">
+                                <img src="img/android-white.png" class="app-android-white">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +88,7 @@
     <div class="section" id="section2">
         <div class="container">
             <div class="col-md-10 col-md-offset-1">
-                <section id="dg-container" class="dg-container">
+                <section id="slide_container" class="dg-container">
                     <div class="dg-wrapper">
                         <a href="#"><img src="images/slide1.jpg" alt="image01"><div>准确迅速的娱乐资讯</div></a>
                         <a href="#"><img src="images/slide2.jpg" alt="image02"><div>简单明了的地图模式 明星就在您身边</div></a>
@@ -85,12 +104,12 @@
             </div>
         </div>
         <footer class="col-md-12 index-footer">
-            <p>Copyright &copy;2015 北京圈圈科技有限公司<span class="contact-us">联系我们：qmxtapp@126.com</span></p>
+            <p>Copyright &copy;2015 北京圈圈科技有限公司</p>
         </footer>
     </div>
 
 </div>
-<div class="arrow">&laquo;</div>
+<div id="arrow" class="arrow arrow-default">&laquo;</div>
 <script src="vendors/jquery/jquery-1.9.1.min.js"></script>
 <script src="vendors/jquery/jquery-ui-1.9.1.min.js"></script>
 <script src="vendors/bootstrap/js/bootstrap.min.js"></script>

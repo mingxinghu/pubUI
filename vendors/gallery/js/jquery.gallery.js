@@ -443,7 +443,12 @@
 			
 			if( !this.supportTrans )
 				this.$currentItm.addClass('dg-center');
-			
+
+			//fade in or out
+			//console.log(this.$currentItm.find("div").html());
+			this.$currentItm.find("div").fadeIn(3600);
+			this.$leftItm.find("div").fadeOut(800);
+			this.$rightItm.find("div").fadeOut(800);
 		},
 		_startSlideshow		: function() {
 		
