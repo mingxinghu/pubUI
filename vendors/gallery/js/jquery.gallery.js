@@ -447,8 +447,12 @@
 			//fade in or out
 			//console.log(this.$currentItm.find("div").html());
 			this.$currentItm.find("div").fadeIn(3600);
-			this.$leftItm.find("div").fadeOut(800);
-			this.$rightItm.find("div").fadeOut(800);
+			if(undefined != this.$leftItm.find("div").attr("style")){
+				this.$leftItm.find("div").removeAttr("style");
+			}
+			if(undefined != this.$rightItm.find("div").attr("style")){
+				this.$rightItm.find("div").removeAttr("style");
+			}
 		},
 		_startSlideshow		: function() {
 		

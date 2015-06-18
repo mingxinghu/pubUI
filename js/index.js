@@ -49,14 +49,14 @@ Index.registerDownload = function(){
 		 });
 		*/
 		var downloadParentDiv = $("#download_parent_div");
-		var html = "<div id=\"download_div\" tabindex=\"55\" class=\"col-md-6 col-md-offset-3\">" +
+		var html = "<div id=\"download_div\" tabindex=\"55\" class=\"col-md-8 col-md-offset-2\">" +
 			"    <div class=\"col-md-6\">" +
 			"        <a href=\"\"><i class=\"app-qr\"></i></a>" +
 			"    </div>" +
-			"    <div class=\"col-md-3\">" +
+			"    <div class=\"col-md-3 popover-app-download\">" +
 			"        <a href=\"\"><i class=\"app-ios\"></i></a>" +
 			"    </div>" +
-			"    <div class=\"col-md-3\">" +
+			"    <div class=\"col-md-3 popover-app-download\">" +
 			"        <a href=\"\"><i class=\"app-android\"></i></a>" +
 			"    </div>" +
 			"</div>";
